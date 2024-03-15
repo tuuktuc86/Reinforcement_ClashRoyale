@@ -15,3 +15,15 @@ arm 기반 architecture가 문제가 되어서 super cell에서 만든 게임을
 
 ## ENV
 강화학습 ENV는 다음과 같은 기능으로 구현되어 있습니다.
+
+## Action
+Action은 카드를 선택할 수 있는 4가지 선택지와 map을 () * () 로 구분한 ()가지 선택지가 존재하며 총 () 개의 action을 가지고 있습니다.
+
+## Agent
+Agent는 state를 입력받아 Actiondmf 결정합니다.
+모델 출력단에서 softmax를 적용하여 다음 선택지를 classification 문제로 해결할 수 있습니다.
+모델은 다음과 같은 구조를 사용하였습니다.
+
+## state
+state는 
+
