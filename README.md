@@ -25,5 +25,8 @@ Agent는 state를 입력받아 Actiondmf 결정합니다.
 모델은 다음과 같은 구조를 사용하였습니다.
 
 ## state
-state는 
+state는 게임에 영향을 주는 부분을 잘라서 사용합니다. size는 ()입니다.
+사용자 설정에 따라 resize, grayscale, framestack을 적용하여 사용할 수 있습니다.
+
+## 시연 영상
 
