@@ -28,5 +28,10 @@ Agent는 state를 입력받아 Actiondmf 결정합니다.
 state는 게임에 영향을 주는 부분을 잘라서 사용합니다. size는 ()입니다.
 사용자 설정에 따라 resize, grayscale, framestack을 적용하여 사용할 수 있습니다.
 
+## 강화학습 알고리즘
+PPO 알고리즘을 적용하여 문제를 해결하고자 하였습니다.
+
+## tensor board
+
 ## 시연 영상
 
