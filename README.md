@@ -25,13 +25,13 @@ arm 기반 architecture가 문제가 되어서 super cell에서 만든 게임을
  -check_elixir(img) : agent가 엘릭서가 부족한 상태에서 카드를 클릭하였는지 확인합니다. 엘릭서가 부족한 상태에서 카드를 클릭하면 '엘릭서가 부족합니다'라는 문구가 뜹니다. 해당 문구를 발견하면 1을 반환합니다.<br>
  -checkET1(img) : 상대 1번 타워의 hp를 확인하여 해당 값을 반환합니다. 타워 hp가 ocr로 인식이 되지 않아 hp바의 길이로 타워 hp를 확인합니다.<br>
  -checkET2(img) : 상대 2번 타워의 hp를 확인하여 해당 값을 반환합니다. 타워 hp가 ocr로 인식이 되지 않아 hp바의 길이로 타워 hp를 확인합니다.<br>
- -checkGameStart
- -checkMainPage
- -stop_game
- -enemy1
- -enemy2
- -enemy3
- -retryGame
+ -checkGameStart(img) : 게임 시작을 판단합니다. 게임 시작 전에 agent가 행동하는 것을 막는 목적으로 활용됩니다.<br>
+ -checkMainPage(img) : 메인 페이지에 들어왔음을 확인합니다. 게임을 다시 시작하는 중 잘못 클릭하는 것을 방지하는 역할을 합니다.<br>
+ -stop_game(img) : 게임을 종료합니다. 게임을 다시 시작하는 중간 메세지 박스를 확인하는 기능입니다.<br>
+ -enemy1(img) : 상대방이 타워를 1개 파괴하였는지 확인합니다. 아군 타워 hp는 글자에 가려져 확인이 어렵기 때문에 파괴됨을 기준으로 reward를 설정합니다.<br>
+ -enemy2(img) : 상대방이 타워를 2개 파괴하였는지 확인합니다. 아군 타워 hp는 글자에 가려져 확인이 어렵기 때문에 파괴됨을 기준으로 reward를 설정합니다.<br>
+ -enemy3(img) : 상대방이 타워를 3개 파괴하였는지 확인합니다. 아군 타워 hp는 글자에 가려져 확인이 어렵기 때문에 파괴됨을 기준으로 reward를 설정합니다.<br>
+ -retryGame : 게임을 다시 시작합니다. 3번의 클릭을 진행하면 게임을 다시 실행할 수 있습니다.<br>
 
 ## Action
 Action은 카드를 선택할 수 있는 4가지 선택지와 map을 () * () 로 구분한 ()가지 선택지가 존재하며 총 () 개의 action을 가지고 있습니다.
