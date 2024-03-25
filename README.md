@@ -47,11 +47,17 @@ Reward체계는 다음과 같이 구성됩니다.<br>
 팡요랩 PPO code를 참고하여 프로그래밍 하였습니다.<br>
 PPO 알고리즘을 사용합니다. 모델 구조는 다음과 같이 구성됩니다. 
 <figure>
-    <img src="https://github.com/tuuktuc86/Reinforcement_ClashRoyale/blob/main/cr_test/model_img.jpg">
+    <img src="https://github.com/tuuktuc86/Reinforcement_ClashRoyale/blob/main/cr_test/model_img.JPG">
 </figure>
+행동을 결정하는 actor 모델 구조와 가치를 평가하는 V 모델 구조입니다. actor는 출력단이 action의 개수만큼 적용되어 있으며 categorical과 sample 함수를 통하여 classification과 유사하게 작동합니다. v는 regression과 유사하게 작동합니다.
+
 ## state
 state는 게임에 영향을 주는 부분을 잘라서 사용합니다. size는 (510, 900, 3)입니다.<br>
 사용자 설정에 따라 resize, grayscale, framestack을 적용하여 사용할 수 있습니다.
+|screen img|gray_scale|frame_stack|
+|---|---|---|
+|<img src="https://github.com/tuuktuc86/Reinforcement_ClashRoyale/blob/main/cr_test/play_screen.png">|<img src="https://github.com/tuuktuc86/Reinforcement_ClashRoyale/blob/main/cr_test/play_screen_gray.png"> |<img src="https://github.com/tuuktuc86/Reinforcement_ClashRoyale/blob/main/cr_test/framestack.jpg">|
+
 
 ## tensor board
 
