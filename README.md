@@ -45,6 +45,12 @@ Action은 2가지 모드가 존재합니다.<br>
 첫째는 카드와 field 선택을 매칭시켜 선택하는 방법입니다. 예를 들면 1번 action은 (1번 카드, field의 1번 구역), 2번 action은 (1번 카드, field의 2번 구역), ... , 7번 action은 (2번 카드, filed의 1번 구역) 이런 식입니다. 전체 액션은 카드 4개 * field 구역 6개 + rest action 1개 해서 25개입니다.<br>
 두번째 방법은 카드와 field를 구분하는 방법입니다. 이 방법은 카드 4가지 + field 9가지 + rest action 1개 해서 14가지 action을 가지고 있습니다.<br>
 rest action은 아무것도 클릭하지 않는 action입니다.<br>
+<figure>
+ <p align="center">
+  <img src="https://github.com/tuuktuc86/Reinforcement_ClashRoyale/blob/main/cr_test/action_page.jpg">
+ </p>
+    
+</figure>
 
 ## Reward
 Reward체계는 다음과 같이 구성됩니다.<br>
