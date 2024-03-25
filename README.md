@@ -5,6 +5,9 @@
 
 ## 클래시 로얄이란?
 클래시 로얄은 카드 수집형 실시간 타워 디펜스 게임입니다. 사용자는 카드를 선택하여 소환할 수 있으며 정해진 시간안에 상대 킹 타워를 파괴하면 승리합니다. 카드 소환에는 엘릭서라는 자원이 필요하며 카드 덱의 구성에 따라 다양한 전략이 가능합니다.
+|game images|cards|
+|---|---|
+|<img src="https://github.com/tuuktuc86/Reinforcement_ClashRoyale/blob/main/cr_test/games.jpg">|<img src="https://github.com/tuuktuc86/Reinforcement_ClashRoyale/blob/main/cr_test/cards.jpg"> |
 
 ## 시작 전
 ubuntu 20.04 위에서 개발되었습니다. 클래시 로얄 게임이 ubuntu에서 돌아가지 못하기 때문에 vmware로 windows를 설치하고 그 위에 blue stack을 설치하여 사용합니다.<br>
