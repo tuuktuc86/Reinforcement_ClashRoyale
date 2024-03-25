@@ -13,6 +13,9 @@ ubuntu에서 vmware를 설치하고 그 다음 blue stack을 설치하여 게임
 arm 기반 architecture가 문제가 되어서 super cell에서 만든 게임을 돌리지 못했던 것으로 기억합니다.<br>
 해결 방법이 있으면 알려주세요.
 
+
+클래시로얄은 CCG(Collectible card Game)이므로 덱의 구성에 따라 전략과 방향성이 달라집니다. 마법카드와 유닛카드의 조합, 앨릭서 생산량, 타워 hp 등에 맞추어 올바르게 설정하세요.
+
 ## ENV
 
 설정한 ENV는 다음과 같은 함수를 포함합니다.
@@ -42,6 +45,27 @@ rest action은 아무것도 클릭하지 않는 action입니다.<br>
 
 ## Reward
 Reward체계는 다음과 같이 구성됩니다.<br>
+<p align="center">
+ 
+|screen img|gray_scale|
+|---|---|
+|단위 시간 당|-1|
+|상대 타워 파괴 시|+800|
+|카드를 선택하지 않고 field를 선택할 때|-20|
+|카드를 클릭하고 filed 선택할 때|+20|
+|아군 타워 파괴 시|+400|
+|승리|+5000|
+|패배|-5000|
+
+</p>
+
+<figure>
+ <p align="center">
+  <img src="https://github.com/tuuktuc86/Reinforcement_ClashRoyale/blob/main/cr_test/reward.jpg">
+ </p>
+    
+</figure>
+
 
 ## model
 팡요랩 PPO code를 참고하여 프로그래밍 하였습니다.<br>
