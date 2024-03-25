@@ -87,3 +87,8 @@ state는 게임에 영향을 주는 부분을 잘라서 사용합니다. size는
 
 ## 시연 영상
 
+<figure>
+  <p align="center">
+    <img src="https://github.com/tuuktuc86/Reinforcement_ClashRoyale/blob/main/cr_test/clash_royale_video.gif" width = "700">
+  </p>
+</figure>
