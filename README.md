@@ -83,7 +83,14 @@ state는 게임에 영향을 주는 부분을 잘라서 사용합니다. size는
 |<img src="https://github.com/tuuktuc86/Reinforcement_ClashRoyale/blob/main/cr_test/play_screen.png">|<img src="https://github.com/tuuktuc86/Reinforcement_ClashRoyale/blob/main/cr_test/play_screen_gray.png"> |<img src="https://github.com/tuuktuc86/Reinforcement_ClashRoyale/blob/main/cr_test/framestack.jpg">|
 
 
-## tensor board
+## graph
+|Reward|Loss|
+|---|---|
+|<img src="https://github.com/tuuktuc86/Reinforcement_ClashRoyale/blob/main/cr_test/Reward_graph.png">|<img src="https://github.com/tuuktuc86/Reinforcement_ClashRoyale/blob/main/cr_test/Loss_graph.png"> |
+
+|click/game|WinLose|
+|---|---|
+|<img src="https://github.com/tuuktuc86/Reinforcement_ClashRoyale/blob/main/cr_test/click_graph.png">|<img src="https://github.com/tuuktuc86/Reinforcement_ClashRoyale/blob/main/cr_test/winRate_graph.png"> |
 
 ## 시연 영상
 
