@@ -40,10 +40,15 @@ Action은 2가지 모드가 존재합니다.<br>
 두번째 방법은 카드와 field를 구분하는 방법입니다. 이 방법은 카드 4가지 + field 9가지 + rest action 1개 해서 14가지 action을 가지고 있습니다.<br>
 rest action은 아무것도 클릭하지 않는 action입니다.<br>
 
+## Reward
+Reward체계는 다음과 같이 구성됩니다.<br>
+
 ## model
 팡요랩 PPO code를 참고하여 프로그래밍 하였습니다.<br>
 PPO 알고리즘을 사용합니다. 모델 구조는 다음과 같이 구성됩니다. 
-
+<figure>
+    <img src="https://github.com/tuuktuc86/Reinforcement_ClashRoyale/blob/main/cr_test/model_img.jpg">
+</figure>
 ## state
 state는 게임에 영향을 주는 부분을 잘라서 사용합니다. size는 (510, 900, 3)입니다.<br>
 사용자 설정에 따라 resize, grayscale, framestack을 적용하여 사용할 수 있습니다.
